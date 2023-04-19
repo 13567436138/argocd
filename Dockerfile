@@ -9,8 +9,7 @@ ENV SOPS_PGP_FP=${SOPS_PGP_FP}
 USER root
 
 COPY sops /usr/local/bin/
-COPY gpg /usr/local/bin
-RUN chmod +x /usr/local/bin/sops && chmod +x /usr/local/bin/gpg && \
+RUN chmod +x /usr/local/bin/sops  && \
     apt-get update && \
     apt-get install -y   gpg && \
     apt-get clean && \
