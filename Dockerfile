@@ -15,7 +15,7 @@ RUN chmod +x /usr/local/bin/sops  && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
     cp /usr/bin/gpg /usr/local/bin/ && mkdir -p /home/argocd/.gnupg && \
-    chown 999:999 /home/argocd/.gnupg
+    chown -R 999:999 /home/argocd
 
 USER 999
 
