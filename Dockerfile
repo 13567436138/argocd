@@ -1,5 +1,5 @@
 #FROM argoproj/argocd:v2.6.7
-FROM registry.cn-hangzhou.aliyuncs.com/hxpdocker/argocd:v2.5.6
+FROM registry.cn-hangzhou.aliyuncs.com/hxpdocker/argocd:v2.6.7
 
 
 ARG SOPS_PGP_FP="8C2BD481C5AD7775D058FA71C0AD1F6E2948B453"
