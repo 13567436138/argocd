@@ -13,7 +13,8 @@ RUN chmod +x /usr/local/bin/sops  && \
     apt-get update && \
     apt-get install -y   gpg && \
     apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+    cp /usr/bin/gpg /usr/local/bin/
 
 USER 999
 
